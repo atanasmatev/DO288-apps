@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo hello > /tmp/there.txt
+/usr/libexec/s2i/assemble
+

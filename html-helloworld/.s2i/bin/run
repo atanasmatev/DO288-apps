@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo Running
+echo meow > /tmp/meow.txt
+
+exec /usr/libexec/s2i/run
+
