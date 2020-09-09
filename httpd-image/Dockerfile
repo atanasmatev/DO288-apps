@@ -1,4 +1,4 @@
-FROM quay.io/atanasmatev/httpd-server
+FROM quay.io/atanasmatev/httpd-server:latest
 
 EXPOSE 8080
 
