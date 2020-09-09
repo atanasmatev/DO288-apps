@@ -15,8 +15,8 @@ RUN   yum install -y --disableplugin=subscription-manager httpd && \
       echo "Hello from the httpd-parent container!" > ${DOCROOT}/index.html
 
 RUN sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf && \
-    chgrp -R 0 /var/log/httpd /var/run/httpd /run && \
-    chmod -R g=u /var/log/httpd /var/run/httpd /run
+    chgrp -R 0 /var/log/httpd /var/run/httpd && \
+    chmod -R g=u /var/log/httpd /var/run/httpd
 
 
 # Allows child images to inject their own content into DocumentRoot
