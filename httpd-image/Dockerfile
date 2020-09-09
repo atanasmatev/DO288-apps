@@ -1,4 +1,4 @@
-FROM quay.io/redhattraining/httpd-parent
+FROM quay.io/atanasmatev/httpd-server
 
 EXPOSE 8080
 
